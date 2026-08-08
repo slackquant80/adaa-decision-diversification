@@ -1,0 +1,7 @@
+field,value
+paper_filename,ADAA_SSRN_Working_Paper_v1.16_FINAL_PUBLIC_RELEASE.pdf
+paper_pdf_sha256,f34dbe40285631d2804db3b821287c6d64b29720209174783b559a59a147ac17
+paper_docx_sha256,99d6627abd2b2a765ee7c2bb70edb86bda39f2705894debaa001e6b12140afd6
+dashboard_url,https://slackquant80.github.io/adaa-slackquant/
+replication_repository_url,https://github.com/slackquant80/adaa-decision-diversification
+science_change_from_v1.0.1,NO
