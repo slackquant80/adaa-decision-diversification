@@ -1,0 +1,5 @@
+"strategy","n_months","max_abs_cell_diff","max_monthly_L1_diff","tolerance","verdict"
+"DM",216,0,0,1e-10,"PASS"
+"AAA",216,1.33226762955019e-15,2.66453525910038e-15,5e-07,"PASS"
+"PAA",216,0,0,1e-10,"PASS"
+"KDA",216,1.0547118733939e-15,2.543104615782e-15,5e-07,"PASS"

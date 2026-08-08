@@ -1,0 +1,3 @@
+comparison,source_mean_decision_distance,variant_mean_decision_distance,relative_change_pct,source_min_pair_distance,variant_min_pair_distance
+2023 selected families: source parents -> practitioner expressions,0.8171374401867475,0.6367690726709416,-22.073198295085426,0.3512630769993555,0.3249789670466125
+successor families: source parents -> current ADAA variants,0.8506330261400891,0.6639867104882028,-21.94204902892495,0.6781283393583885,0.3249789670466125

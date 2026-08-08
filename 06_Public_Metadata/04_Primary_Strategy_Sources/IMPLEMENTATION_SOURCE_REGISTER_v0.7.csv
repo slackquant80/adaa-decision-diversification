@@ -1,0 +1,5 @@
+source_id,source_tier,title,maintainer_or_author,identifier,project_role,status,access_date
+SRC-IMPL-PA-001,official package documentation,Return.portfolio: Calculate weighted returns for a portfolio of assets,PerformanceAnalytics authors,CRAN/PerformanceAnalytics,weight timestamp and effective-date convention,verified documentation,2026-08-07
+SRC-IMPL-PA-002,official package source,R/Return.portfolio.R,PerformanceAnalytics authors,CRAN/PerformanceAnalytics source,source-level confirmation that returns start at weight date plus one day,verified source,2026-08-07
+SRC-SEC-DB-LAA-001,secondary implementation reference,LAA pages 102-107,DB Financial Investment,local PDF,explicit two-month UNRATE convention and code shift,embedded and verified,2026-08-07
+SRC-LEGACY-DASH-001,legacy source code,ADAA_final.Rmd,ADAA project,local file,current successor LAA/FAA/proxy/accounting behavior,embedded and checksummed,2026-08-07

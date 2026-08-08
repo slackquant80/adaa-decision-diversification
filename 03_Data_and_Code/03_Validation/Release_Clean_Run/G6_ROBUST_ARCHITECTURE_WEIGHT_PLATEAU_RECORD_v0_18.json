@@ -1,0 +1,36 @@
+{
+  "version": "v0.18",
+  "status": "SUPPORTIVE_ROBUSTNESS_EVIDENCE",
+  "author_recollection_tested": "ADAA was intended as moderate/limited optimization and robust architecture, not maximum historical backtest fit.",
+  "diagnostic_only_no_reselection": true,
+  "simplex_draws": 100000,
+  "min_weight_per_sleeve": 0.1,
+  "random_seed": 20260807,
+  "expost_max_gross_sharpe": 1.0859929007056095,
+  "expost_max_weights": {
+    "HAA": 0.5050669281828604,
+    "BAA": 0.1,
+    "ADM": 0.10000000000000007,
+    "FAA": 0.10000000000000007,
+    "LAA": 0.1949330718171396
+  },
+  "historical_gross_sharpe": 1.0486311237044916,
+  "historical_fraction_of_expost_max_sharpe": 0.9655966655243855,
+  "historical_sharpe_percentile_of_100k": 0.83228,
+  "equal_fraction_of_expost_max_sharpe": 0.9521848917176069,
+  "fraction_of_feasible_100k_at_least_95pct_of_max_sharpe": 0.40328,
+  "local_historical_L1_0_20_25bps_Sharpe_q05_q95": [
+    0.8842129325962169,
+    0.9153668001428628
+  ],
+  "rolling_60m_optimum_windows": 159,
+  "block_bootstrap_replications": 500,
+  "block_months": 12,
+  "rolling_optimizer_control_note": "Post-opening robustness diagnostic; not a pre-registered strategy and not a candidate canonical replacement.",
+  "interpretation_constraints": [
+    "The ex-post optimum is a diagnostic reference, not a strategy recommendation.",
+    "Broad-plateau language is permitted only as a robustness interpretation, not proof of future performance.",
+    "Bootstrap/rolling-optimum dispersion measures estimation instability; it does not identify the true future optimum.",
+    "Historical and equal weights remain frozen canonical/reference specifications regardless of these results."
+  ]
+}

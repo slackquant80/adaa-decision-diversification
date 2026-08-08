@@ -1,0 +1,6 @@
+source_id,source_name,data_role,access_method,mutable_endpoint,freeze_required,license_or_terms_note,canonical_status
+DATA-YAHOO-ETF,Yahoo Finance,adjusted market price history,quantmod::getSymbols src=yahoo,yes,yes,"public web data; redistribution rights not assumed; release package should prefer derived outputs or user-download script",candidate input
+DATA-YAHOO-FX,Yahoo Finance,KRW/USD market series,quantmod::getSymbols KRW=X,yes,yes,"same terms caveat as Yahoo ETF data",optional Korean-investor overlay
+DATA-FRED-UNRATE,Federal Reserve Bank of St. Louis FRED,unemployment rate series,fredr/FRED API,yes,yes,"US government-origin statistical series distributed via FRED; preserve retrieval metadata",candidate baseline macro input
+DATA-ALFRED-UNRATE,Federal Reserve Bank of St. Louis ALFRED,UNRATE vintage robustness,FRED/ALFRED API,yes,yes,"use only when vintage reconstruction is explicitly run and frozen",robustness input
+DATA-LEGACY-MF,Yahoo Finance mutual-fund histories,pre-ETF proxy returns,quantmod::getSymbols src=yahoo,yes,yes,"proxy use requires economic-role and overlap audit; raw redistribution not assumed",candidate proxy input

@@ -1,0 +1,5 @@
+comparison,basis,annualized_mean_return_difference,HAC12_p_value,bootstrap_P_mean_return_advantage,bootstrap_P_Sharpe_advantage,bootstrap_P_MDD_advantage
+ADAA vs 60/40,Gross,0.0209903583650239,0.2046135211458818,0.9102,0.9522,0.9725
+ADAA vs 60/40,25 bps,0.0083390393497578,0.622965132084246,0.6745,0.7821,0.9595
+ADAA vs HAA hindsight winner,Gross,-0.0211696305399628,0.0573844170651844,0.0226,0.385,0.8646
+ADAA vs HAA hindsight winner,25 bps,-0.0185178047207263,0.1108320389069658,0.0504,0.4144,0.8428

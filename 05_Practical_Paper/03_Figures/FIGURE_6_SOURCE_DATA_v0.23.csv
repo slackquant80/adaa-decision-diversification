@@ -1,0 +1,14 @@
+episode,label,selection_basis,ADAA_gross_return,benchmark_60_40_gross_return,active_return_vs_60_40
+GFC_sample_onset,"GFC sample onset
+2008-06 to 2009-03",predeclared stress window,-0.0445070554666073,-0.2297063949844637,0.18519933951785642
+2011_Euro_US_downgrade,"2011 risk-off
+2011-05 to 2011-10",predeclared stress window,-0.0197119031871799,0.0026091120537314,-0.0223210152409113
+2018_Q4,2018 Q4,predeclared stress window,-0.0359187971045338,-0.067418373705541,0.031499576601007204
+COVID_crash,"COVID crash
+2020-02 to 2020-03",predeclared stress window,-0.0391548587893066,-0.0935446299950061,0.054389771205699496
+COVID_rebound,"COVID rebound
+2020-04 to 2020-08",predeclared stress window,0.2125647127802317,0.209221047772222,0.0033436650080096997
+2022_stock_bond_stress,"2022 stock-bond stress
+2022-01 to 2022-10",predeclared stress window,-0.0691544693793123,-0.1709335393482774,0.1017790699689651
+rapid_reversal_diagnostic,"Rapid-reversal diagnostic
+7 flagged worst relative months",data-defined diagnostic; average of flagged months,0.015856324161727157,0.056296811777496424,-0.0404404876157692

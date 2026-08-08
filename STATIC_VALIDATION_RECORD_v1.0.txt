@@ -1,0 +1,5 @@
+ADAA Public Replication Package v1.0
+Release-tree validation performed 2026-08-08
+
+PUBLIC_PACKAGE_STATIC_VALIDATION: PASS
+files=130 active_png=11 warnings=0 failures=0

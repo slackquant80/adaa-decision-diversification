@@ -1,0 +1,8 @@
+rule,mean_constant_weight_run_months,median_constant_weight_run_months,max_constant_weight_run_months
+ADM,1.184782608695652,1.0,5
+FAA,1.1978021978021978,1.0,4
+HAA,1.6515151515151516,1.0,12
+BAA,1.6641221374045803,1.0,7
+RAA parent,8.384615384615385,2.0,118
+LAA parent,18.166666666666668,6.5,115
+LAA,27.25,6.5,129

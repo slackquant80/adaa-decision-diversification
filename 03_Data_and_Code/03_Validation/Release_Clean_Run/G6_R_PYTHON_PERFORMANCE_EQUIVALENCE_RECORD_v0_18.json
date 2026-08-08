@@ -1,0 +1,13 @@
+{
+  "version": "v0.18",
+  "status": "PASS",
+  "metric_rows_compared": 40,
+  "monthly_rows_compared": 654,
+  "max_metric_abs_diff": 4.831690603168681e-13,
+  "metric_cells_gt_1e-10": 0,
+  "max_monthly_gross_return_abs_diff": 2.0816681711721685e-16,
+  "max_monthly_gross_turnover_abs_diff": 4.884981308350689e-15,
+  "r_input": "G6_PRIMARY_PERFORMANCE_R_VALIDATION_v0_17_1.csv",
+  "python_input": "G6_PRIMARY_PERFORMANCE_AND_COST_GRID_v0_17.csv",
+  "interpretation": "Independent R/Python performance and cross-netted turnover/accounting reconciliation only; no strategy reselection or optimization."
+}

@@ -1,0 +1,58 @@
+{
+  "version": "v0.11.1",
+  "all_pass": true,
+  "performance_blind": true,
+  "headline_performance_computed": false,
+  "sleeves": [
+    {
+      "sleeve": "HAA",
+      "r_months": 218,
+      "python_months": 218,
+      "common_months": 218,
+      "month_set_match": true,
+      "max_abs_weight_diff": 3.885780586188048e-16,
+      "n_cells_diff_gt_1e_12": 0,
+      "pass": true
+    },
+    {
+      "sleeve": "BAA_Aggressive",
+      "r_months": 218,
+      "python_months": 218,
+      "common_months": 218,
+      "month_set_match": true,
+      "max_abs_weight_diff": 3.3306690738754696e-16,
+      "n_cells_diff_gt_1e_12": 0,
+      "pass": true
+    },
+    {
+      "sleeve": "ADM",
+      "r_months": 218,
+      "python_months": 218,
+      "common_months": 218,
+      "month_set_match": true,
+      "max_abs_weight_diff": 3.885780586188048e-16,
+      "n_cells_diff_gt_1e_12": 0,
+      "pass": true
+    },
+    {
+      "sleeve": "FAA_legacy",
+      "r_months": 218,
+      "python_months": 218,
+      "common_months": 218,
+      "month_set_match": true,
+      "max_abs_weight_diff": 3.885780586188048e-16,
+      "n_cells_diff_gt_1e_12": 0,
+      "pass": true
+    },
+    {
+      "sleeve": "LAA",
+      "r_months": 210,
+      "python_months": 210,
+      "common_months": 210,
+      "month_set_match": true,
+      "max_abs_weight_diff": 0.0,
+      "n_cells_diff_gt_1e_12": 0,
+      "pass": true
+    }
+  ]
+}

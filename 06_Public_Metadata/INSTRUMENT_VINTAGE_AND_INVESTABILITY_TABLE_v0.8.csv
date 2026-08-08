@@ -1,0 +1,20 @@
+asset_id,primary_series,legacy_proxy,economic_role,used_by,transition_rule,investability_note,status
+US_LARGE,SPY,VFINX,US large-cap equity,"HAA;BAA canary;ADM;FAA;LAA",primary when valid; proxy only pre-primary if required,ETF is investable; proxy is historical reconstruction only,registered
+US_TECH,QQQ,VIGRX,US growth/technology equity,"HAA;BAA;ADM;FAA;LAA",primary when valid; proxy only pre-primary if required,ETF is investable; proxy is historical reconstruction only,registered
+US_SMALL,IWM,NAESX,US small-cap equity,HAA,primary when valid; proxy only pre-primary if required,ETF is investable; proxy is historical reconstruction only,registered
+DEV_EXUS,EFA,FDIVX,developed ex-US equity,"HAA;BAA",primary when valid; proxy only pre-primary if required,proxy economic match requires audit,registered
+EM,EEM,VEIEX,emerging-market equity,"HAA;BAA;ADM;FAA;LAA",primary when valid; proxy only pre-primary if required,proxy economic match requires audit,registered
+EUROPE,VGK,VEURX,Europe equity,"ADM;FAA",primary when valid; proxy only pre-primary if required,proxy economic match requires audit,registered
+JAPAN,EWJ,EWJ,Japan equity,"legacy source pool",no splice when same series,duplicate legacy identifier requires no synthetic splice,registered
+KOREA,EWY,VEIEX,Korea equity,"HAA;ADM;FAA;LAA",primary preferred; VEIEX is not an economic Korea proxy and must not be auto-used for EWY,legacy array alignment must not be interpreted as valid proxy mapping,registered-warning
+US_REIT,VNQ,VGSIX,US real estate,"HAA;ADM;FAA",primary when valid; proxy only pre-primary if required,proxy economic match plausible but audit required,registered
+COMMODITY,DBC,PCRAX,broad commodities,"HAA;BAA;ADM;FAA",primary when valid; proxy only pre-primary if required,proxy product methodology may differ,registered
+GOLD,GLD,FKRCX,gold,"HAA;ADM;FAA;LAA",primary when valid; proxy only pre-primary if required,proxy may have fund-specific tracking differences,registered
+UST_LONG,TLT,VUSTX,long Treasury,"HAA;BAA;ADM;FAA",primary when valid; proxy only pre-primary if required,duration alignment audit required,registered
+HIGH_YIELD,HYG,VWEHX,US high yield,"ADM;FAA",primary when valid; proxy only pre-primary if required,credit/duration alignment audit required,registered
+CORP_IG,LQD,VWESX,US investment-grade corporate,"BAA;ADM;FAA",primary when valid; proxy only pre-primary if required,duration alignment audit required,registered
+TIPS,TIP,VIPSX,TIPS,"HAA canary;BAA;ADM;FAA",primary when valid; proxy only pre-primary if required,real-duration alignment audit required,registered
+TBILL,BIL,VFISX,very short Treasury/cash,"HAA;BAA;ADM;FAA",primary when valid; proxy only pre-primary if required,VFISX maturity differs; must be treated as proxy not identity,registered
+UST_INTERMEDIATE,IEF,VFITX,intermediate Treasury,"HAA;BAA;LAA",primary when valid; proxy only pre-primary if required,duration alignment audit required,registered
+UST_SHORT,SHY,VFISX,short Treasury,"ADM;FAA;LAA",primary when valid; proxy only pre-primary if required,VFISX maturity alignment audit required,registered
+US_AGG_BOND,AGG,VBMFX,US aggregate bond,BAA,primary when valid; proxy only pre-primary if required,bond-universe alignment audit required,registered

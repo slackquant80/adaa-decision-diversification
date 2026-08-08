@@ -1,0 +1,5 @@
+﻿frozen_or_legacy_label,paper_v1.15_public_label,scope,note
+ADAA_historical_weights_canonical,ADAA — practitioner weights,frozen code/output identifier,Identifier is retained in frozen code for exact reproducibility.
+ADAA historical,ADAA practitioner weights,legacy derived exhibit label,Only the display label changes; the return path is unchanged.
+ADAA successor weights,ADAA practitioner weights,legacy derived exhibit label,Only the display label changes; the return path is unchanged.
+historical_weight,later_practitioner_weight,Figure 5 presentation field,The v1.0.1 publication source copy uses the final-paper terminology; the v1.0 legacy source remains archived.

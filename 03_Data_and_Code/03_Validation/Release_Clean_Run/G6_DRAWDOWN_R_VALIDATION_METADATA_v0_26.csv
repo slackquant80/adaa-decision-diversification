@@ -1,0 +1,2 @@
+"validation","rows","max_abs_numeric_diff_vs_python","definition","return_path_changed","strategy_changed","weights_changed","costs_changed"
+"PASS",10,3.01980662698043e-14,"W0=1 included as valid running peak",FALSE,FALSE,FALSE,FALSE

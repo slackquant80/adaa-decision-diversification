@@ -1,0 +1,12 @@
+{
+  "version": "v0.16",
+  "status": "PASS",
+  "r_rows": 218,
+  "independent_rows": 218,
+  "common_rows": 218,
+  "r_only_rows": 0,
+  "independent_only_rows": 0,
+  "max_abs_diff": 3.885780586188048e-16,
+  "cells_gt_1e-10": 0,
+  "headline_performance_computed": false
+}

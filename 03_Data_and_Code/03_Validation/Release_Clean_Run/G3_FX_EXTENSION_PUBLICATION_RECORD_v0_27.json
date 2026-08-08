@@ -1,0 +1,172 @@
+{
+  "version": "v0.27",
+  "verdict": "CONDITIONAL PASS FOR APPENDIX / HISTORICAL KOREA-INVESTOR APPLICATION",
+  "drawdown_definition": "standard running-peak drawdown including initial wealth W0=1",
+  "core_drawdown_definition_independent_R_validation": {
+    "status": "PASS / CLOSED",
+    "max_abs_R_Python_difference": 2.576e-14,
+    "source": "G6_DRAWDOWN_R_RUNTIME_VALIDATION_RECORD_v0.27.txt"
+  },
+  "return_path_invariance_vs_v0_20": {
+    "max_abs_portfolio_return_difference": 9.974659986866641e-17,
+    "max_abs_unhedged_weight_difference": 0.0,
+    "non_drawdown_metric_max_abs_differences": {
+      "months": 0.0,
+      "CAGR": 8.326672684688674e-17,
+      "annualized_arithmetic_mean": 8.326672684688674e-17,
+      "annualized_volatility": 9.71445146547012e-17,
+      "zero_rate_Sharpe": 1.1102230246251565e-16,
+      "ending_growth_of_1": 1.7763568394002505e-15,
+      "average_unhedged_weight": 0.0,
+      "state_changes": 0.0
+    }
+  },
+  "core_variants_gross": [
+    {
+      "months": 218,
+      "CAGR": 0.10801162614373427,
+      "annualized_arithmetic_mean": 0.10697207722875557,
+      "annualized_volatility": 0.08973663255034887,
+      "zero_rate_Sharpe": 1.192066987456169,
+      "ending_growth_of_1": 6.444982845821743,
+      "max_drawdown": -0.1033927593264432,
+      "recovery_return_required": 0.11531555249182644,
+      "months_underwater": 126,
+      "share_months_underwater": 0.5779816513761468,
+      "longest_underwater_run_months": 18,
+      "drawdown_area_months": 3.577407298919521,
+      "base_return_path": "gross_underlying",
+      "variant": "fully_hedged_proxy",
+      "average_unhedged_weight": 0.0,
+      "state_changes": 0
+    },
+    {
+      "months": 218,
+      "CAGR": 0.11989840730414558,
+      "annualized_arithmetic_mean": 0.11724106618863168,
+      "annualized_volatility": 0.0840864771048779,
+      "zero_rate_Sharpe": 1.3942915701225216,
+      "ending_growth_of_1": 7.823691619632812,
+      "max_drawdown": -0.09389996824303282,
+      "recovery_return_required": 0.10363090713169573,
+      "months_underwater": 105,
+      "share_months_underwater": 0.481651376146789,
+      "longest_underwater_run_months": 12,
+      "drawdown_area_months": 2.003734362931872,
+      "base_return_path": "gross_underlying",
+      "variant": "fixed_50_unhedged",
+      "average_unhedged_weight": 0.5,
+      "state_changes": 0
+    },
+    {
+      "months": 218,
+      "CAGR": 0.1278504651040968,
+      "annualized_arithmetic_mean": 0.12751005514850777,
+      "annualized_volatility": 0.11571911557077688,
+      "zero_rate_Sharpe": 1.1018927557437064,
+      "ending_growth_of_1": 8.896844515240783,
+      "max_drawdown": -0.14315234047362035,
+      "recovery_return_required": 0.16706860184778638,
+      "months_underwater": 122,
+      "share_months_underwater": 0.5596330275229358,
+      "longest_underwater_run_months": 12,
+      "drawdown_area_months": 3.768668161604009,
+      "base_return_path": "gross_underlying",
+      "variant": "fully_unhedged",
+      "average_unhedged_weight": 1.0,
+      "state_changes": 0
+    },
+    {
+      "months": 218,
+      "CAGR": 0.13254767129187472,
+      "annualized_arithmetic_mean": 0.12837430428764243,
+      "annualized_volatility": 0.08170046354222743,
+      "zero_rate_Sharpe": 1.5712799991800697,
+      "ending_growth_of_1": 9.594586464182907,
+      "max_drawdown": -0.06930107441591016,
+      "recovery_return_required": 0.07446132418431455,
+      "months_underwater": 102,
+      "share_months_underwater": 0.46788990825688076,
+      "longest_underwater_run_months": 7,
+      "drawdown_area_months": 1.704703567278151,
+      "base_return_path": "gross_underlying",
+      "variant": "legacy_dynamic_90_50_10",
+      "average_unhedged_weight": 0.5311926605504587,
+      "state_changes": 29
+    }
+  ],
+  "threshold_grid_gross": {
+    "cells": 16,
+    "CAGR_min": 0.12217110753795901,
+    "CAGR_max": 0.13514506507912416,
+    "legacy_CAGR": 0.13254767129187472,
+    "MDD_min": -0.09389996824303282,
+    "MDD_max": -0.06930107441591016,
+    "cells_CAGR_above_fixed50": 16,
+    "cells_MDD_shallower_than_fixed50": 15
+  },
+  "mdd_definition_correction_rows": [
+    {
+      "base_return_path": "gross_underlying",
+      "variant": "fully_hedged_proxy",
+      "old_max_drawdown_v0_20": -0.1016399293067977,
+      "corrected_max_drawdown_v0_27": -0.1033927593264432,
+      "MDD_correction_v027_minus_v020": -0.0017528300196455
+    },
+    {
+      "base_return_path": "gross_underlying",
+      "variant": "fixed_50_unhedged",
+      "old_max_drawdown_v0_20": -0.0938999682430328,
+      "corrected_max_drawdown_v0_27": -0.0938999682430328,
+      "MDD_correction_v027_minus_v020": -1.3877787807814457e-17
+    },
+    {
+      "base_return_path": "gross_underlying",
+      "variant": "fully_unhedged",
+      "old_max_drawdown_v0_20": -0.1431523404736203,
+      "corrected_max_drawdown_v0_27": -0.1431523404736203,
+      "MDD_correction_v027_minus_v020": -5.551115123125783e-17
+    },
+    {
+      "base_return_path": "gross_underlying",
+      "variant": "legacy_dynamic_90_50_10",
+      "old_max_drawdown_v0_20": -0.0693010744159101,
+      "corrected_max_drawdown_v0_27": -0.0693010744159101,
+      "MDD_correction_v027_minus_v020": -5.551115123125783e-17
+    },
+    {
+      "base_return_path": "net25_underlying",
+      "variant": "fully_hedged_proxy",
+      "old_max_drawdown_v0_20": -0.1057670336360331,
+      "corrected_max_drawdown_v0_27": -0.1075118110801039,
+      "MDD_correction_v027_minus_v020": -0.0017447774440708
+    },
+    {
+      "base_return_path": "net25_underlying",
+      "variant": "fixed_50_unhedged",
+      "old_max_drawdown_v0_20": -0.0946059383201659,
+      "corrected_max_drawdown_v0_27": -0.0946059383201659,
+      "MDD_correction_v027_minus_v020": -5.551115123125783e-17
+    },
+    {
+      "base_return_path": "net25_underlying",
+      "variant": "fully_unhedged",
+      "old_max_drawdown_v0_20": -0.144910375559379,
+      "corrected_max_drawdown_v0_27": -0.144910375559379,
+      "MDD_correction_v027_minus_v020": -2.775557561562892e-17
+    },
+    {
+      "base_return_path": "net25_underlying",
+      "variant": "legacy_dynamic_90_50_10",
+      "old_max_drawdown_v0_20": -0.0702627968899006,
+      "corrected_max_drawdown_v0_27": -0.0702627968899006,
+      "MDD_correction_v027_minus_v020": -6.938893903907227e-17
+    }
+  ],
+  "limitations": [
+    "legacy thresholds have outcome-linked historical provenance and are not treated as ex-ante optimal",
+    "fully hedged leg is a zero-carry/zero-hedge-cost proxy; forward/NDF carry, transaction costs, collateral/funding and tax are not modeled",
+    "zero-rate Sharpe is diagnostic only and is not proposed as a Korean-investor benchmark",
+    "FX extension remains separate from the global Decision Diversification contribution"
+  ]
+}
