@@ -1,2 +1,0 @@
-PUBLIC_PACKAGE_V1_0_2_VALIDATION: PASS
-files=165 active_png=12 archived_v1_0_png=11 warnings=0 failures=0
