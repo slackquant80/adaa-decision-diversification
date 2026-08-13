@@ -6,7 +6,7 @@ The paper studies **Autonomous Dynamic Asset Allocation (ADAA)** as a rule-gover
 
 ## Public resources
 
-- **Working paper:** `paper/ADAA_SSRN_Working_Paper_v1.22_FINAL_PUBLIC_RELEASE.pdf`
+- **Working paper:** `paper/ADAA_SSRN_Working_Paper_v1.23_FINAL_PUBLIC_RELEASE.pdf`
 - **Research dashboard:** https://slackquant80.github.io/adaa-slackquant/
 - **Replication repository:** https://github.com/slackquant80/adaa-decision-diversification
 

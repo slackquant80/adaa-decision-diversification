@@ -19,4 +19,4 @@ The archived public replication release `v1.0.2` remains immutable. The current 
 
 The audit found no headline numerical, inferential, or claim impact requiring reopening of the Foundation paper. The corrected MDD fields belong to a secondary diagnostic layer; the paper-level drawdown analysis already used the corrected `W0=1` convention.
 
-The current working paper on `main` is SSRN v1.22. The archived `v1.0.2` replication release is preserved as the historical frozen public snapshot.
+The current working paper on `main` is SSRN v1.23. The archived `v1.0.2` replication release is preserved as the historical frozen public snapshot.
