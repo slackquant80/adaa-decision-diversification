@@ -4,6 +4,12 @@ Public research and replication materials for **“Diversify the Decisions, Not 
 
 The paper studies **Autonomous Dynamic Asset Allocation (ADAA)** as a rule-governed, modular dynamic-allocation architecture. The current five-sleeve configuration is a worked reference implementation, not a permanent definition of ADAA.
 
+## Current public version
+
+- **SSRN version:** v1.23
+- **SSRN Abstract ID:** 7251518
+- **Frozen public replication snapshot:** v1.0.2
+
 ## Public resources
 
 - **Working paper:** `paper/ADAA_SSRN_Working_Paper_v1.23_FINAL_PUBLIC_RELEASE.pdf`
