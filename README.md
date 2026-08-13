@@ -6,11 +6,11 @@ The paper studies **Autonomous Dynamic Asset Allocation (ADAA)** as a rule-gover
 
 ## Public resources
 
-- **Working paper:** `paper/ADAA_SSRN_Working_Paper_v1.21_FINAL_PUBLIC_RELEASE.pdf`
+- **Working paper:** `paper/ADAA_SSRN_Working_Paper_v1.22_FINAL_PUBLIC_RELEASE.pdf`
 - **Research dashboard:** https://slackquant80.github.io/adaa-slackquant/
 - **Replication repository:** https://github.com/slackquant80/adaa-decision-diversification
 
-The archived GitHub release `v1.0.2` remains the frozen replication snapshot. The current `main` branch is a curated reader-facing view of the same frozen Foundation science, with the current public working-paper PDF and simplified navigation.
+The archived GitHub release `v1.0.2` remains the frozen replication snapshot. The current `main` branch is a curated reader-facing view of the same frozen Foundation science, with the current public working-paper PDF, simplified navigation, and non-headline reproducibility hardening introduced after the frozen release. The hardening does not rewrite or replace the archived `v1.0.2` release.
 
 ## Included
 
@@ -25,6 +25,10 @@ The archived GitHub release `v1.0.2` remains the frozen replication snapshot. Th
 ## Not redistributed
 
 Downloaded raw Yahoo Finance or FRED market-data files, local runtime objects, private university material, proprietary research, third-party article files, credentials, and local session files are not redistributed.
+
+## Scientific-code hardening
+
+A retrospective scientific-code design audit found no headline-science error requiring reopening of the Foundation paper. Two versioned successor diagnostics are included on `main`: `analyze_g6_rolling_robustness_v0_17_1.py` adds a fail-closed used-asset return check, and `analyze_weight_robustness_plateau_v0_18_1.py` applies the already-canonical `W0=1` drawdown convention to secondary weight-robustness MDD fields. The archived `v1.0.2` release remains immutable. See `06_Public_Metadata/SCIENTIFIC_CODE_HARDENING_NOTE_2026-08-12.md`.
 
 ## Reproduction
 

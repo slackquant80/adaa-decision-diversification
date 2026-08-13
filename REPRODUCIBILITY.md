@@ -60,8 +60,8 @@ source("03_Data_and_Code/02_Code/05_VALIDATE_G6_PERFORMANCE_ENGINE_R_v0_17_1.R")
 
 ```bash
 python 03_Data_and_Code/02_Code/compare_g6_r_python_performance_v0_18.py
-python 03_Data_and_Code/02_Code/analyze_g6_rolling_robustness_v0_17.py
-python 03_Data_and_Code/02_Code/analyze_weight_robustness_plateau_v0_18.py
+python 03_Data_and_Code/02_Code/analyze_g6_rolling_robustness_v0_17_1.py
+python 03_Data_and_Code/02_Code/analyze_weight_robustness_plateau_v0_18_1.py
 python 03_Data_and_Code/02_Code/06_G6_INFERENCE_STRESS_BENCHMARKS_v0_19.py
 python 03_Data_and_Code/02_Code/09_ANALYZE_DRAWDOWN_AND_COMPOUNDING_v0_26.py
 ```
@@ -73,6 +73,10 @@ source("03_Data_and_Code/02_Code/09_VALIDATE_DRAWDOWN_AND_COMPOUNDING_R_v0_26.R"
 ```bash
 python 03_Data_and_Code/02_Code/10_G6_DRAWDOWN_CORRECTED_INFERENCE_v0_26.py
 ```
+
+### Secondary hardening note
+
+The `v0.17.1` and `v0.18.1` scripts are successor diagnostics on the current `main` branch. They do not alter the frozen Foundation headline science or the archived `v1.0.2` release. `v0.17.1` fails closed if a non-zero target weight would use a missing holding-period return. `v0.18.1` also corrects secondary weight-robustness MDD fields to the canonical `W0=1` drawdown convention already used by the paper-level drawdown analysis. Historical `v0.17`/`v0.18` scripts remain in the repository for provenance.
 
 ## 5. KRW/USD appendix
 
