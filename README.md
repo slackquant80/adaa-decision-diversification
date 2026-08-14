@@ -6,35 +6,40 @@ The paper studies **Autonomous Dynamic Asset Allocation (ADAA)** as a rule-gover
 
 ## Current public version
 
-- **SSRN version:** v1.23
+- **SSRN version:** v1.24
 - **SSRN Abstract ID:** 7251518
-- **Frozen public replication snapshot:** v1.0.2
+- **Current public replication release:** v1.1.1
+- **Historical frozen predecessor:** v1.0.2
 
 ## Public resources
 
-- **Working paper:** `paper/ADAA_SSRN_Working_Paper_v1.23_FINAL_PUBLIC_RELEASE.pdf`
+- **Working paper:** `paper/ADAA_SSRN_Working_Paper_v1.24_FINAL_FREEZE.pdf`
 - **Research dashboard:** https://slackquant80.github.io/adaa-slackquant/
 - **Replication repository:** https://github.com/slackquant80/adaa-decision-diversification
 
-The archived GitHub release `v1.0.2` remains the frozen replication snapshot. The current `main` branch is a curated reader-facing view of the same frozen Foundation science, with the current public working-paper PDF, simplified navigation, and non-headline reproducibility hardening introduced after the frozen release. The hardening does not rewrite or replace the archived `v1.0.2` release.
+Release `v1.1.1` is the reproducibility successor to the immutable `v1.0.2` snapshot. It binds the public replication surface to SSRN v1.24 and adds deterministic publication-figure rendering and exhibit-level provenance. It does **not** change the frozen strategy rules, empirical return paths, inference results, or substantive conclusions.
 
 ## Included
 
 - frozen R and Python research code;
 - public source metadata and input contracts;
 - derived figure and table source data;
-- active final-paper figure renders;
+- deterministic publication renderer `03_Data_and_Code/02_Code/18_RENDER_PUBLICATION_EXHIBITS_v1_1_4.py`;
+- 12 exact v1.24 publication figure renders in PNG and SVG;
+- exact figure-render and source-data manifests;
 - nonprivate scientific validation outputs;
 - source and rights documentation;
-- the current public Foundation paper.
+- the current public working paper.
 
 ## Not redistributed
 
 Downloaded raw Yahoo Finance or FRED market-data files, local runtime objects, private university material, proprietary research, third-party article files, credentials, and local session files are not redistributed.
 
-## Scientific-code hardening
+## Exact-exhibit reproducibility
 
-A retrospective scientific-code design audit found no headline-science error requiring reopening of the Foundation paper. Two versioned successor diagnostics are included on `main`: `analyze_g6_rolling_robustness_v0_17_1.py` adds a fail-closed used-asset return check, and `analyze_weight_robustness_plateau_v0_18_1.py` applies the already-canonical `W0=1` drawdown convention to secondary weight-robustness MDD fields. The archived `v1.0.2` release remains immutable. See `06_Public_Metadata/SCIENTIFIC_CODE_HARDENING_NOTE_2026-08-12.md`.
+The v1.24 publication layer adds an explicit chain from frozen source data to deterministic rendering code to the final publication figure. The active map is `05_Practical_Paper/EXHIBIT_DATA_POINTERS_v1.1.4.csv`, and the exact render hashes are recorded in `05_Practical_Paper/03_Figures/EXACT_FIGURE_RENDER_MANIFEST_v1.1.4.csv`.
+
+The working-paper binding is recorded in `06_Public_Metadata/PUBLICATION_TARGET_v1.1.1.csv`. The manuscript PDF itself remains a separate public artifact; its SHA-256 is used to make the version relationship explicit.
 
 ## Reproduction
 
@@ -46,6 +51,14 @@ cd 05_ADAA
 ```
 
 Then follow `REPRODUCIBILITY.md`. A full mixed R/Python reproduction may take roughly 20–60 minutes depending on network access, package installation, and machine speed.
+
+To regenerate the publication figures after the frozen source-data files are present:
+
+```bash
+python 03_Data_and_Code/02_Code/18_RENDER_PUBLICATION_EXHIBITS_v1_1_4.py
+```
+
+Compare the outputs with `05_Practical_Paper/03_Figures/EXACT_FIGURE_RENDER_MANIFEST_v1.1.4.csv`.
 
 ## Research boundary
 

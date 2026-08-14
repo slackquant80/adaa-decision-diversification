@@ -78,7 +78,7 @@ python 03_Data_and_Code/02_Code/10_G6_DRAWDOWN_CORRECTED_INFERENCE_v0_26.py
 
 The `v0.17.1` and `v0.18.1` scripts are successor diagnostics on the current `main` branch. They do not alter the frozen Foundation headline science or the archived `v1.0.2` release. `v0.17.1` fails closed if a non-zero target weight would use a missing holding-period return. `v0.18.1` also corrects secondary weight-robustness MDD fields to the canonical `W0=1` drawdown convention already used by the paper-level drawdown analysis. Historical `v0.17`/`v0.18` scripts remain in the repository for provenance.
 
-## 5. KRW/USD appendix
+## 5. USD/KRW appendix
 
 ```r
 source("03_Data_and_Code/02_Code/07_EXPORT_FX_EXTENSION_AUDIT_v0_19.R")
@@ -111,6 +111,16 @@ source("03_Data_and_Code/02_Code/17_VALIDATE_FULL_2023_STRATEGY_ZOO_R_v0_30.R")
 ```
 
 The final independent validation should report PASS and should not use strategy performance for Strategy-Zoo selection.
+
+## 7. Regenerate the exact v1.24 publication exhibits
+
+After the frozen source-data files are present, run:
+
+```bash
+python 03_Data_and_Code/02_Code/18_RENDER_PUBLICATION_EXHIBITS_v1_1_4.py
+```
+
+The active source-to-render map is `05_Practical_Paper/EXHIBIT_DATA_POINTERS_v1.1.4.csv`. Compare the regenerated PNG/SVG hashes with `05_Practical_Paper/03_Figures/EXACT_FIGURE_RENDER_MANIFEST_v1.1.4.csv`. The exact manuscript binding is recorded separately in `06_Public_Metadata/PUBLICATION_TARGET_v1.1.1.csv`.
 
 Nonprivate validation outputs are retained under `03_Data_and_Code/03_Validation/Release_Clean_Run/`.
 

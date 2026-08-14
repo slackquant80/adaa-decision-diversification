@@ -1,0 +1,6 @@
+Sleeve,Most direct comparison,Observed decision difference,Interpretation
+HAA,Same parent rule: source universe vs ADAA universe,L1 = 0.563; timing agreement = 0.692,The wider universe changes the parent rule materially before Top-N/replacement changes are applied.
+BAA Aggressive,Same parent rule: source vs ADAA ETF set,L1 = 0.275; timing agreement = 0.814,"Mostly role-preserving, but ETF substitution changes some decisions."
+ADM,Source rule design vs ADAA rule design,L1 = 2.000; timing agreement = 0.314,The redesign is too broad for a simple 2 × 2 comparison that changes one element at a time.
+FAA,Same parent rule: source universe vs ADAA universe,L1 = 1.336; timing agreement = 0.686,Universe expansion alone materially changes decisions; later rule changes add a second material difference.
+LAA,Same parent rule: source vs ADAA equity allocation,L1 = 0.500; timing agreement = 1.000,Holdings change while the parent transition clock is preserved exactly.
