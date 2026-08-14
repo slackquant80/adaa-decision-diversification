@@ -9,3 +9,10 @@ science_change_from_v1.0.2,NO
 release_change,exact-exhibit-reproducibility-publication-source-traceability-and-final-pdf-binding
 exact_renderer,18_RENDER_PUBLICATION_EXHIBITS_v1_1_4.py
 exact_figure_manifest,EXACT_FIGURE_RENDER_MANIFEST_v1.1.4.csv
+public_replication_release,v1.1.1_PUBLIC
+public_replication_asset_filename,ADAA_Public_Replication_Package_v1.1.1.zip
+public_replication_asset_sha256,9385704df7ab7f054a0cbf626b3289ddf5bc8ee818ee096fb4323973a196654e
+github_release_url,https://github.com/slackquant80/adaa-decision-diversification/releases/tag/v1.1.1
+archival_doi,10.5281/zenodo.21935901
+historical_v1.0.2_doi,10.5281/zenodo.21853534
+public_release_date,2026-08-14

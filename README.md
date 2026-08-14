@@ -16,8 +16,13 @@ The paper studies **Autonomous Dynamic Asset Allocation (ADAA)** as a rule-gover
 - **Working paper:** `paper/ADAA_SSRN_Working_Paper_v1.24_FINAL_FREEZE.pdf`
 - **Research dashboard:** https://slackquant80.github.io/adaa-slackquant/
 - **Replication repository:** https://github.com/slackquant80/adaa-decision-diversification
+- **GitHub release v1.1.1:** https://github.com/slackquant80/adaa-decision-diversification/releases/tag/v1.1.1
+- **Archived release DOI (v1.1.1):** https://doi.org/10.5281/zenodo.21935901
+- **Historical v1.0.2 DOI:** https://doi.org/10.5281/zenodo.21853534
 
 Release `v1.1.1` is the reproducibility successor to the immutable `v1.0.2` snapshot. It binds the public replication surface to SSRN v1.24 and adds deterministic publication-figure rendering and exhibit-level provenance. It does **not** change the frozen strategy rules, empirical return paths, inference results, or substantive conclusions.
+
+The v1.1.1 release is public on GitHub and archived at Zenodo DOI `10.5281/zenodo.21935901`. The uploaded replication asset SHA-256 is `9385704df7ab7f054a0cbf626b3289ddf5bc8ee818ee096fb4323973a196654e`.
 
 ## Included
 

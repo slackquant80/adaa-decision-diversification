@@ -10,3 +10,11 @@ This is the fresh successor to public replication v1.0.2. The earlier local v1.1
 - Preserves all frozen strategy rules, return paths, inference results, and substantive conclusions from public v1.0.2.
 - Presentation refinements reflected in v1.24 include the Figure 5 Monte Carlo-range wording, Figure 7 axis reconciliation, Figure 8 exploratory-bar distinction, Z1/Z2 readability improvements, and the FX2 threshold-sensitivity heatmap.
 - The manuscript PDF is distributed separately and is not bundled into this package; `06_Public_Metadata/PUBLICATION_TARGET_v1.1.1.csv` records the exact binding hash.
+
+## Published identifiers
+
+- GitHub release: `https://github.com/slackquant80/adaa-decision-diversification/releases/tag/v1.1.1`
+- Zenodo DOI: `10.5281/zenodo.21935901`
+- Public replication asset SHA-256: `9385704df7ab7f054a0cbf626b3289ddf5bc8ee818ee096fb4323973a196654e`
+- Historical predecessor v1.0.2 DOI: `10.5281/zenodo.21853534`
+
