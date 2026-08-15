@@ -1,4 +1,4 @@
-﻿source_id,source_tier,title,authors,date,identifier,project_role,acquisition_status,verification_status,access_date
+source_id,source_tier,title,authors,date,identifier,project_role,acquisition_status,verification_status,access_date
 SRC-PRI-HAA-001,primary working paper,Dual and Canary Momentum with Rising Yields/Inflation: Hybrid Asset Allocation (HAA),Keller; Keuning,2023,SSRN 4346906,HAA published-parent specification,official SSRN abstract and author coauthor exposition identified; binary not embedded,identified,2026-08-07
 SRC-PRI-BAA-001,primary working paper,Relative and Absolute Momentum in Times of Rising/Low Yields: Bold Asset Allocation (BAA),Keller,2022,SSRN 4166845,BAA Balanced/Aggressive published-parent specification,official SSRN and author-uploaded indexed full-text excerpts identified; binary not embedded,identified,2026-08-07
 SRC-PRI-FAA-001,primary working paper,Generalized Momentum and Flexible Asset Allocation (FAA): An Heuristic Approach,Keller; van Putten,2012,SSRN 2193735,FAA published-parent specification,official SSRN metadata and author-uploaded record identified; exact implementation cross-check remains open,identified,2026-08-07

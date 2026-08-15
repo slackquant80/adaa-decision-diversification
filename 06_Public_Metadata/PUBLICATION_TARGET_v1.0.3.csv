@@ -1,0 +1,8 @@
+field,value
+paper_filename,ADAA_SSRN_Working_Paper_v1.21_FINAL_PUBLIC_RELEASE.pdf
+paper_pdf_sha256,97a6abc701f0cb64a17da3c5287a6fdce2d3d04e472406bfd496a95f193fc302
+paper_docx_sha256,08d168433830d9c16a2a272ffd8c3d1be83183d8279325d0eca68ae214878f93
+dashboard_url,https://slackquant80.github.io/adaa-slackquant/
+replication_repository_url,https://github.com/slackquant80/adaa-decision-diversification
+science_change_from_v1.0.2,NO
+release_change,public-code-hygiene-and-current-paper-metadata-only

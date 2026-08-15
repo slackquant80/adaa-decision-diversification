@@ -1,0 +1,12 @@
+field,value
+paper_filename,ADAA_SSRN_Working_Paper_v1.25_FINAL_FREEZE.pdf
+paper_pdf_sha256,833459a65cc76dc17f2624367b4ffeaf9ff75a63ac19493b2f31a51e93c531a5
+paper_pages,25
+paper_status,SSRN_v1.25_FINAL_PUBLIC_CONFIRMED
+public_replication_predecessor,v1.1.1_IMMUTABLE
+science_change_from_v1.1.1,NO
+science_change_from_v1.0.2,NO
+release_change,final-v1.25-abstract-spacing-correction-and-paper-rebinding
+exact_renderer,18_RENDER_PUBLICATION_EXHIBITS_v1_1_6.py
+exact_figure_manifest,EXACT_FIGURE_RENDER_MANIFEST_v1.1.6.csv
+exhibit_pointer_map,EXHIBIT_DATA_POINTERS_v1.1.6.csv

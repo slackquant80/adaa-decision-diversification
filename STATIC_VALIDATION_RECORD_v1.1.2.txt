@@ -1,0 +1,4 @@
+PUBLIC_PACKAGE_V1_1_2_VALIDATION: PASS
+files=209 active_png=12 warnings=0 failures=0
+Validated release boundary: public final 25-page SSRN v1.25 companion release package; no science change from public v1.1.1.
+Paper SHA-256: 833459a65cc76dc17f2624367b4ffeaf9ff75a63ac19493b2f31a51e93c531a5
