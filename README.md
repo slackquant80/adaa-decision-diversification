@@ -18,7 +18,7 @@ The paper studies **Autonomous Dynamic Asset Allocation (ADAA)** as a rule-gover
 - **Research dashboard:** https://slackquant80.github.io/adaa-slackquant/
 - **Replication repository:** https://github.com/slackquant80/adaa-decision-diversification
 - **GitHub release v1.1.2:** https://github.com/slackquant80/adaa-decision-diversification/releases/tag/v1.1.2
-- **Archived release DOI (v1.1.2):** to be added after the Zenodo version is published
+- **Archived release DOI (v1.1.2):** https://doi.org/10.5281/zenodo.21953502
 - **Historical v1.1.1 DOI:** https://doi.org/10.5281/zenodo.21935901
 - **Historical v1.0.2 DOI:** https://doi.org/10.5281/zenodo.21853534
 
