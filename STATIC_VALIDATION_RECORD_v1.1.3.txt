@@ -1,0 +1,9 @@
+PUBLIC_PACKAGE_V1_1_3_VALIDATION: PASS
+release_class=metadata_only_paper_rebinding
+ssrn_abstract_id=7251518
+paper_version=v1.28
+paper_pages=25
+paper_sha256=1c5de656ca939dd0ccfc192565599cfcdfedb928eed4d5d8fcd5d3ecfa190c62
+science_change_from_v1.1.2=NO
+active_empirical_figures=12
+figure_bytes_changed=NO

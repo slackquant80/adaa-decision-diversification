@@ -1,0 +1,14 @@
+field,value
+paper_filename,ADAA_SSRN_Working_Paper_v1.28_FINAL_PUBLIC.pdf
+paper_pdf_sha256,1c5de656ca939dd0ccfc192565599cfcdfedb928eed4d5d8fcd5d3ecfa190c62
+paper_pages,25
+paper_status,SSRN_v1.28_FINAL_PUBLIC_LIVE_VERIFIED
+ssrn_abstract_id,7251518
+public_replication_predecessor,v1.1.2_IMMUTABLE
+science_change_from_v1.1.2,NO
+science_change_from_v1.1.1,NO
+science_change_from_v1.0.2,NO
+release_change,metadata-only-v1.28-paper-rebinding
+exact_renderer,18_RENDER_PUBLICATION_EXHIBITS_v1_1_6.py
+exact_figure_manifest,EXACT_FIGURE_RENDER_MANIFEST_v1.1.6.csv
+exhibit_pointer_map,EXHIBIT_DATA_POINTERS_v1.1.6.csv
