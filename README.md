@@ -1,6 +1,6 @@
 # ADAA Public Replication Package v1.1.4
 
-**Status: VERSIONED RELEASE CANDIDATE / SSRN v1.34 FINAL-PUBLIC COMPANION / NO SCIENCE CHANGE.**
+**Status: PUBLIC RELEASE / SSRN v1.34 FINAL-PUBLIC COMPANION / NO SCIENCE CHANGE.**
 
 This package accompanies the working paper *Diversify the Decisions, Not Just the Assets: A Practical Architecture for Dynamic Asset Allocation When Strategy Choice Is Uncertain*.
 
@@ -10,19 +10,22 @@ Version v1.1.4 is a freshly rebuilt publication-synchronization successor bound 
 
 - Research dashboard: https://slackquant80.github.io/adaa-slackquant/
 - Public replication repository: https://github.com/slackquant80/adaa-decision-diversification
+- GitHub release v1.1.4: https://github.com/slackquant80/adaa-decision-diversification/releases/tag/v1.1.4
+- Archived release DOI (v1.1.4): https://doi.org/10.5281/zenodo.22006841
+- Historical v1.1.2 DOI: https://doi.org/10.5281/zenodo.21953502
 
 The working-paper PDF is distributed separately. Its exact filename and SHA-256 binding are recorded in `06_Public_Metadata/PUBLICATION_TARGET_v1.1.4.csv`.
 
-## What changed from the current public v1.1.2
+## What changed from public v1.1.2
 
 - paper binding advanced to SSRN v1.34 FINAL PUBLIC / LIVE VERIFIED (26 pages);
 - the active exact exhibit layer advanced to the v1.34 publication renders;
 - figure labels/layout were synchronized to the v1.34 manuscript without changing source data or plotted values;
-- publication target, release control, exact binding record, exhibit pointer map, validation record, and manifest were rebuilt for v1.1.4.
-- the distributed-package validator was hardened to verify full manifest coverage, file hashes/byte sizes, forbidden runtime/file surfaces, and public code-hygiene checks on the exact release tree.
+- publication target, release control, exact binding record, exhibit pointer map, validation record, and manifest were rebuilt for v1.1.4;
+- the distributed-package validator was hardened to verify full manifest coverage, file hashes/byte sizes, forbidden runtime/file surfaces, and public code-hygiene checks on the exact release tree;
 - validator manifest coverage is defined over the distributed payload; repository-only VCS metadata (`.git/`) is excluded when validation is rerun inside a clone.
 
-The former local v1.1.3 release-ready package was bound to SSRN v1.28 and is superseded as a publication candidate. It was never the public replication baseline.
+The former local v1.1.3 release-ready package was bound to SSRN v1.28 and is superseded as a publication candidate. It was never the public replication baseline and was not published retroactively.
 
 ## What is included
 
@@ -61,6 +64,6 @@ Public scripts retrieve required public-market inputs locally. Redistribution ri
 
 ## Release status
 
-Version v1.1.4 is release-ready locally but is not declared public until the corresponding GitHub/archival release is actually completed. Public v1.1.2 remains the immutable live predecessor until that coordinated release closes.
+Version v1.1.4 is the current public replication release for the live-verified SSRN v1.34 manuscript. The immutable GitHub release asset is archived at Zenodo DOI `10.5281/zenodo.22006841`. Public v1.1.2 remains an immutable historical predecessor.
 
 This package validates reproducibility of a retrospective research workflow. It is not a live track record, historical preregistration, or evidence that the current HAA/BAA/ADM/FAA/LAA implementation must remain optimal or effective indefinitely.
