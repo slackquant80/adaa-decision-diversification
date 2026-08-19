@@ -24,22 +24,22 @@ matplotlib.rcParams.update({
     "figure.facecolor": "white",
     "axes.facecolor": "white",
     "savefig.facecolor": "white",
-    "svg.hashsalt": "adaa-final-house-sync-v1.1.6",
+    "svg.hashsalt": "adaa-ssrn-v1.34",
 })
 
 FIGURES = {
-    "Figure 1": ("FIGURE_1_SOURCE_DATA_v0.22.csv", "Figure_1_Return_Correlation_vs_Decision_Timing_PAPER_v1.25_EXACT"),
-    "Figure 2": ("FIGURE_2_SOURCE_DATA_v0.22.csv", "Figure_2_What_When_HowMuch_Decision_Fingerprints_PAPER_v1.25_EXACT"),
-    "Figure 3": ("FIGURE_3_SOURCE_DATA_v0.22.csv", "Figure_3_Different_Decision_Clocks_PAPER_v1.25_EXACT"),
-    "Figure 4": ("FIGURE_4_SOURCE_DATA_v0.23.csv", "Figure_4_Rolling_60M_Hindsight_Winner_PAPER_v1.25_EXACT"),
-    "Figure 5": ("FIGURE_5_SOURCE_DATA_v1.0.1.csv", "Figure_5_Broad_Plateau_Unstable_Optimum_PAPER_v1.25_EXACT"),
-    "Figure 6": ("FIGURE_6_SOURCE_DATA_v1.1.csv", "Figure_6_Cumulative_Wealth_PAPER_v1.25_EXACT"),
-    "Figure 7": ("FIGURE_7_SOURCE_DATA_v1.1.csv", "Figure_7_Drawdown_Depth_and_Duration_PAPER_v1.25_EXACT"),
-    "Figure 8": ("FIGURE_8_SOURCE_DATA_v1.0.1.csv", "Figure_8_Stress_Protection_and_Rapid_Reversal_PAPER_v1.25_EXACT"),
-    "Figure A1": ("FIGURE_Z1_SOURCE_DATA_FULL_2023_PAIRWISE_v1.0.csv", "Figure_A1_Full_2023_Pairwise_Decision_Distance_PAPER_v1.25_EXACT"),
-    "Figure A2": ("FIGURE_Z2_SOURCE_DATA_FULL_2023_FIVE_RULE_SELECTOR_v1.0.csv", "Figure_A2_Full_2023_Five_Rule_Score_Distribution_PAPER_v1.25_EXACT"),
-    "Figure B1": ("FIGURE_FX1_SOURCE_DATA_MONTHLY_PATHS_v1.0.csv", "Figure_B1_Currency_Exposure_Growth_PAPER_v1.25_EXACT"),
-    "Figure B2": ("FIGURE_FX2_SOURCE_DATA_v1.1.csv", "Figure_B2_Threshold_Sensitivity_PAPER_v1.25_EXACT"),
+    "Figure 1": ("FIGURE_1_SOURCE_DATA_v0.22.csv", "Figure_1_Return_Correlation_vs_Decision_Timing_PAPER_v1.34_EXACT"),
+    "Figure 2": ("FIGURE_2_SOURCE_DATA_v0.22.csv", "Figure_2_What_When_HowMuch_Decision_Fingerprints_PAPER_v1.34_EXACT"),
+    "Figure 3": ("FIGURE_3_SOURCE_DATA_v0.22.csv", "Figure_3_Different_Decision_Clocks_PAPER_v1.34_EXACT"),
+    "Figure 4": ("FIGURE_4_SOURCE_DATA_v0.23.csv", "Figure_4_Rolling_60M_Hindsight_Winner_PAPER_v1.34_EXACT"),
+    "Figure 5": ("FIGURE_5_SOURCE_DATA_v1.0.1.csv", "Figure_5_Broad_Plateau_Unstable_Optimum_PAPER_v1.34_EXACT"),
+    "Figure 6": ("FIGURE_6_SOURCE_DATA_v1.1.csv", "Figure_6_Cumulative_Wealth_PAPER_v1.34_EXACT"),
+    "Figure 7": ("FIGURE_7_SOURCE_DATA_v1.1.csv", "Figure_7_Drawdown_Depth_and_Duration_PAPER_v1.34_EXACT"),
+    "Figure 8": ("FIGURE_8_SOURCE_DATA_v1.0.1.csv", "Figure_8_Stress_Protection_and_Rapid_Reversal_PAPER_v1.34_EXACT"),
+    "Appendix Figure Z1": ("FIGURE_Z1_SOURCE_DATA_FULL_2023_PAIRWISE_v1.0.csv", "Figure_Z1_Full_2023_Pairwise_Decision_Distance_PAPER_v1.34_EXACT"),
+    "Appendix Figure Z2": ("FIGURE_Z2_SOURCE_DATA_FULL_2023_FIVE_RULE_SELECTOR_v1.0.csv", "Figure_Z2_Full_2023_Five_Rule_Score_Distribution_PAPER_v1.34_EXACT"),
+    "Appendix FX Figure 1": ("FIGURE_FX1_SOURCE_DATA_MONTHLY_PATHS_v1.0.csv", "Figure_FX1_Currency_Exposure_Growth_PAPER_v1.34_EXACT"),
+    "Appendix FX Figure 2": ("FIGURE_FX2_SOURCE_DATA_v1.1.csv", "Figure_FX2_Threshold_Sensitivity_PAPER_v1.34_EXACT"),
 }
 
 
@@ -54,12 +54,13 @@ def figure_1(df: pd.DataFrame, out: Path) -> None:
     ax.scatter(df.return_correlation, df.transition_disagreement, s=60)
     offsets = {
         "HAA–BAA": (5, 5), "HAA–ADM": (-18, -14), "HAA–FAA": (5, 5), "HAA–LAA": (5, 5),
-        "BAA–ADM": (-58, -3), "BAA–FAA": (-58, 6), "BAA–LAA": (5, 5), "ADM–FAA": (-35, -14),
+        "BAA–ADM": (-82, -3), "BAA–FAA": (-82, 6), "BAA–LAA": (5, 5), "ADM–FAA": (-35, -14),
         "ADM–LAA": (5, 5), "FAA–LAA": (5, -16),
     }
     for r in df.itertuples():
         dx, dy = offsets.get(r.pair, (5, 5))
-        ax.annotate(r.pair.replace("–", "-"), (r.return_correlation, r.transition_disagreement),
+        display_pair = r.pair.replace("BAA", "BAA Agg.").replace("–", "-")
+        ax.annotate(display_pair, (r.return_correlation, r.transition_disagreement),
                     xytext=(dx, dy), textcoords="offset points", fontsize=9)
     ax.set_xlabel("Monthly return correlation")
     ax.set_ylabel("Decision-timing disagreement\n(1 - transition Jaccard)")
@@ -76,7 +77,8 @@ def figure_2(df: pd.DataFrame, out: Path) -> None:
     offsets = {"HAA": (7, 2), "BAA": (7, -2), "ADM": (7, 9), "FAA": (7, -15), "LAA": (7, 4)}
     for r in df.itertuples():
         dx, dy = offsets.get(r.sleeve, (5, 5))
-        ax.annotate(r.sleeve, (r.mean_active_assets, 100 * r.change_rate), xytext=(dx, dy),
+        display_sleeve = "BAA Agg." if r.sleeve == "BAA" else r.sleeve
+        ax.annotate(display_sleeve, (r.mean_active_assets, 100 * r.change_rate), xytext=(dx, dy),
                     textcoords="offset points", fontsize=9, fontweight="bold")
     ax.set_xlabel("Portfolio breadth: average number of active holdings")
     ax.set_ylabel("Target-change frequency: months with a target-weight change (%)")
@@ -91,7 +93,7 @@ def figure_2(df: pd.DataFrame, out: Path) -> None:
 def figure_3(df: pd.DataFrame, out: Path) -> None:
     order = ["LAA", "LAA parent", "RAA parent", "BAA", "HAA", "FAA", "ADM"]
     d = df.set_index("rule").loc[order].reset_index()
-    d["display_rule"] = d["rule"].replace({"LAA parent": "Published LAA", "RAA parent": "Published RAA"})
+    d["display_rule"] = d["rule"].replace({"LAA parent": "Published LAA", "RAA parent": "Published RAA", "BAA": "BAA Aggressive"})
     fig, ax = plt.subplots(figsize=(8.3033, 5.6867))
     y = np.arange(len(d))
     ax.barh(y, d.mean_constant_weight_run_months)
@@ -103,7 +105,7 @@ def figure_3(df: pd.DataFrame, out: Path) -> None:
                 f"{r.mean_constant_weight_run_months:.1f} mo  (max {int(r.max_constant_weight_run_months)})",
                 va="center", fontsize=8.5)
     ax.set_xlim(0, max(34, d.mean_constant_weight_run_months.max() + 6))
-    fig.subplots_adjust(left=0.18, right=0.97, bottom=0.14, top=0.98)
+    fig.subplots_adjust(left=0.22, right=0.97, bottom=0.14, top=0.98)
     _save(fig, out)
 
 
@@ -115,14 +117,15 @@ def figure_4(df: pd.DataFrame, out: Path) -> None:
     fig, ax = plt.subplots(figsize=(8.6967, 4.9867))
     y = [pos.get(x, np.nan) for x in d.best_sleeve]
     ax.scatter(d.holding_month, y, s=17)
-    ax.set_yticks(range(len(order)), order)
+    display_order = ["BAA Aggressive" if x == "BAA" else x for x in order]
+    ax.set_yticks(range(len(order)), display_order)
     ax.invert_yaxis()
     ax.set_xlabel("End of trailing 60-month window")
     ax.set_ylabel("Standalone sleeve with highest trailing Sharpe")
     ax.xaxis.set_major_locator(mdates.YearLocator(2))
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
     ax.grid(axis="y", alpha=0.08)
-    fig.subplots_adjust(left=0.16, right=0.98, bottom=0.18, top=0.98)
+    fig.subplots_adjust(left=0.21, right=0.98, bottom=0.18, top=0.98)
     _save(fig, out)
 
 
@@ -140,7 +143,8 @@ def figure_5(df: pd.DataFrame, out: Path) -> None:
     ax1.scatter(x, df.full_sample_expost_optimum, marker="x", s=58, linewidths=1.6,
                 label="Full-sample ex-post max-Sharpe weights", zorder=5)
     ax1.axhline(0.10, linestyle="--", linewidth=0.9, alpha=0.65)
-    ax1.set_xticks(x, df.sleeve)
+    display_sleeves = ["BAA Agg." if v == "BAA" else v for v in df.sleeve]
+    ax1.set_xticks(x, display_sleeves)
     ax1.set_ylabel("Sleeve weight")
     ax1.set_title("A. Near-optimal Monte Carlo weight ranges", fontsize=9.4, pad=7)
     ax1.legend(frameon=False, fontsize=6.8, loc="upper right")
@@ -167,7 +171,7 @@ def figure_5(df: pd.DataFrame, out: Path) -> None:
     ax2.plot([], [], color=bootstrap_color, linewidth=2.1, label="Bootstrap optimum: 2.5-97.5% range")
     ax2.plot([], [], color=rolling_color, linestyle="dotted", linewidth=2.0, label="Rolling 60-month optimum: min-max")
     ax2.axhline(0.10, color=constraint_color, linestyle="--", linewidth=0.9, alpha=0.75, label="10% minimum weight constraint", zorder=1)
-    ax2.set_xticks(x, df.sleeve)
+    ax2.set_xticks(x, display_sleeves)
     ax2.set_title("B. Estimated optimum moves", fontsize=9.4, pad=7)
     ax2.legend(frameon=False, fontsize=6.6, loc="upper right")
 
@@ -185,7 +189,7 @@ def figure_6(df: pd.DataFrame, out: Path) -> None:
     d = df.copy()
     d["holding_month"] = pd.to_datetime(d.holding_month)
     order = ["ADAA practitioner weights", "HAA hindsight strongest sleeve", "60/40 SPY/IEF", "SPY"]
-    display = {"ADAA practitioner weights": "ADAA (practitioner weights)", "HAA hindsight strongest sleeve": "HAA (full-sample winner)", "60/40 SPY/IEF": "SPY/IEF 60/40", "SPY": "SPY"}
+    display = {"ADAA practitioner weights": "ADAA (practitioner weights)", "HAA hindsight strongest sleeve": "HAA (best full-sample sleeve)", "60/40 SPY/IEF": "SPY/IEF 60/40", "SPY": "SPY"}
     fig, ax = plt.subplots(figsize=(8.5333, 4.9667))
     for label in order:
         g = d[d.portfolio == label]
@@ -203,7 +207,7 @@ def figure_7(df: pd.DataFrame, out: Path) -> None:
     label_map = {
         "ADAA practitioner weights": "ADAA (practitioner weights)",
         "ADAA equal 20%": "ADAA (equal 20%)",
-        "HAA hindsight strongest sleeve": "HAA (full-sample winner)",
+        "HAA hindsight strongest sleeve": "HAA (best full-sample sleeve)",
         "60/40 SPY/IEF": "SPY/IEF 60/40",
         "SPY": "SPY",
     }
@@ -221,7 +225,7 @@ def figure_7(df: pd.DataFrame, out: Path) -> None:
         ax.annotate(lab, (r.MDD_depth_percent, r.max_underwater_months), xytext=(dx, dy),
                     textcoords="offset points", fontsize=8.5)
     ax.set_xlabel("Maximum drawdown depth (%)")
-    ax.set_ylabel("Longest underwater spell (months)")
+    ax.set_ylabel("Longest time under water (months)")
     fig.subplots_adjust(left=0.12, right=0.98, bottom=0.15, top=0.98)
     _save(fig, out)
 
@@ -231,7 +235,7 @@ def figure_8(df: pd.DataFrame, out: Path) -> None:
         "GFC sample window\n2008-06 to 2009-03": "GFC period covered by sample\n2008-06 to 2009-03",
     })
     exploratory = d.selection_basis.str.contains("data-defined diagnostic", case=False, na=False)
-    d.loc[exploratory, "label"] = "Exploratory rapid-reversal diagnostic\nmean of 7 flagged one-month outcomes"
+    d.loc[exploratory, "label"] = "Rapid-reversal diagnostic\naverage across 7 identified months"
     vals = 100 * d.active_return_vs_60_40
     fig, ax = plt.subplots(figsize=(8.4633, 4.9467))
     y = np.arange(len(d))
@@ -243,7 +247,7 @@ def figure_8(df: pd.DataFrame, out: Path) -> None:
             bar.set_hatch("///")
             bar.set_linewidth(0.8)
     ax.set_yticks(y, d.label)
-    ax.set_xlabel("ADAA minus 60/40 return difference (percentage points)")
+    ax.set_xlabel("ADAA cumulative return minus 60/40 return (percentage points)")
     ax.set_xlim(min(-5.5, float(vals.min()) - 1.0), max(20.0, float(vals.max()) + 2.0))
     ax.axvline(0, linewidth=0.9)
     for i, v in enumerate(vals):
@@ -330,8 +334,8 @@ def figure_fx2(df: pd.DataFrame, out: Path) -> None:
 
     fig, ax = plt.subplots(figsize=(8.50, 5.73))
     im = ax.imshow(100 * cagr.values, aspect="auto", origin="lower", cmap="viridis")
-    ax.set_xticks(range(len(highs)), [f"{x:.1f}" for x in highs])
-    ax.set_yticks(range(len(lows)), [f"{x:.1f}" for x in lows])
+    ax.set_xticks(range(len(highs)), [f"{x:g}" for x in highs])
+    ax.set_yticks(range(len(lows)), [f"{x:g}" for x in lows])
     ax.set_xlabel("High z-score threshold: reduce USD exposure above this level")
     ax.set_ylabel("Low z-score threshold: increase USD exposure below this level")
 

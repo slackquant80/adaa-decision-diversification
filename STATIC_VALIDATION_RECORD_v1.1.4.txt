@@ -1,0 +1,19 @@
+PUBLIC_PACKAGE_V1_1_4_VALIDATION: PASS
+release_class=paper_rebinding_plus_exact_exhibit_presentation_sync
+ssrn_abstract_id=7251518
+paper_version=v1.34
+paper_pages=26
+paper_sha256=eb50bd50eb6e159c76e77444d716ef477f9daec05a881606e154b3e3317ce90a
+live_exact_byte_match=PASS
+science_change_from_v1.1.2=NO
+active_empirical_figures=12
+active_figure_assets=24
+figure_source_data_changed=NO
+exact_render_repeat=24/24_BYTE_IDENTICAL
+table_reconciliation=40/40_PASS
+public_code_hygiene=PASS
+forbidden_redistributed_extensions=0
+manifest_coverage=FULL
+manifest_entries=205
+distributed_files_including_manifest=206
+validation_boundary=distributed_payload_excluding_vcs_metadata_git
